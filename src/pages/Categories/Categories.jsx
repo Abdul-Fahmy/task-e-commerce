@@ -7,6 +7,8 @@ export default function Categories() {
   const navigate = useNavigate();
 
   const [categories, setCategories] = useState(null);
+
+  //Get All Categories
   async function getCategories() {
     const options = {
       url: "http://task-ecommerce-api.vercel.app/api/categories",
@@ -28,6 +30,7 @@ export default function Categories() {
             {categories.map((category) => (
               <div
                 onClick={() => {
+                  //Navigate to specific Category
                   navigate(`/category/${category.id}`);
                 }}
                 key={category.id}
@@ -40,6 +43,7 @@ export default function Categories() {
                 />
                 <div className="title text-center my-4">
                   <Link
+                    //Navigate to specific Category
                     to={`/category/${category.id}`}
                     className="text-gray-500 font-semibold text-2xl"
                   >

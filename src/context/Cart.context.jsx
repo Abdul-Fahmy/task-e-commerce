@@ -15,18 +15,21 @@ export default function CartProvider({ children }) {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
+  //Add Products specific To Cart
   function addToCart(product) {
     const updatedCart = [...cart, product];
     setCart(updatedCart);
     toast.success("Added to Cart successfully");
   }
 
+  //Empty Cart
   function clearCart() {
     localStorage.clear("cart");
     setCart([]);
     toast.success("Your cart is now clear");
   }
 
+  //Remove specific product From Cart
   function removeProductFromCart(productId) {
     const updatedCart = cart.filter((item) => item.id !== productId);
     setCart(updatedCart);

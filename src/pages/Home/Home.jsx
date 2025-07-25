@@ -10,7 +10,7 @@ export default function Home() {
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
 
-  //getProduct
+  //getProducts
   async function getProduct() {
     const options = {
       url: "http://task-ecommerce-api.vercel.app/api/products",
@@ -22,6 +22,7 @@ export default function Home() {
     setEmpty(null);
   }
 
+  //Product Search by Name, Tags, description,
   async function getProductBySearch() {
     const options = {
       url: `http://task-ecommerce-api.vercel.app/api/products/search/${searchValue}`,
@@ -42,6 +43,7 @@ export default function Home() {
     }
   }
 
+  //Products By Price Range
   async function filteredProductsByPrice() {
     const options = {
       url: `http://task-ecommerce-api.vercel.app/api/products?minPrice=${minPrice}&maxPrice=${maxPrice}`,

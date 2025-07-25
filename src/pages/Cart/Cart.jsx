@@ -7,6 +7,7 @@ export default function Cart() {
   const { cart, clearCart, isCartEmpty } = useContext(CartContext);
   const totalPrice = cart.reduce((sum, item) => sum + (item.price || 0), 0);
   const total = totalPrice.toFixed(2);
+
   return (
     <>
       {isCartEmpty ? (
