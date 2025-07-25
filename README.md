@@ -1,8 +1,44 @@
-# React + Vite
+## To-Do-List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple e-commerce frontend built with React. Features include product listing, search, price filtering, and a shopping cart using localStorage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch products from an API
+- Real-time product search
+- Filter by `minPrice` and `maxPrice`
+- Add to cart functionality
+- Cart saved in `localStorage`
+- Loading spinner while fetching data
+
+## Tech Stack
+
+- React
+- Axios
+- Tailwind CSS
+- react-hot-toast
+- react-router-dom
+- react-image-gallery
+- react-icons
+
+## Folder Structure
+
+/src
+/assets
+/components
+/pages
+index.css
+App.jsx
+index.jsx
+
+## Contributing
+
+Contributions are welcome! Please open issues and submit pull requests.
+
+## Contact
+
+Abdulrahman Fahmy – @Abdul-Fahmy – abdelrhmanfahmy69@gmail.com
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
