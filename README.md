@@ -4,18 +4,20 @@ A simple e-commerce frontend built with React. Features include product listing,
 
 ## Features
 
-- Fetch products from an API
-- Real-time product search
-- Filter by `minPrice` and `maxPrice`
-- Add to cart functionality
-- Cart saved in `localStorage`
-- Loading spinner while fetching data
+- Fetch products from live API
+- Real time product search
+- Filter by minimum and maximum price
+- Add to cart & persist cart in localStorage
+- Display total cart quantity & price
+- Loading state while fetching data
+- Fully responsive layout
 
 ## Tech Stack
 
 - React
 - Axios
 - Tailwind CSS
+- React Context API
 - react-hot-toast
 - react-router-dom
 - react-image-gallery
